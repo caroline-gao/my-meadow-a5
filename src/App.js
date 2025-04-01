@@ -11,12 +11,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Onboarding />} />
-        <Route path="/indoor" element={<Indoor />} />
-        <Route path="/outdoor" element={<Outdoor />} />
-        <Route path="/outdoor/edit" element={<OutdoorEditPage />} />
-        <Route path="/calendar" element={<CalendarPage />} />
-        <Route path="/indoor/edit" element={<IndoorEdit />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Onboarding />} />
+        <Route path={`${process.env.PUBLIC_URL}/my-meadow-a5/indoor`} element={<Indoor />} />
+        <Route path={`${process.env.PUBLIC_URL}/my-meadow-a5/outdoor`} element={<Outdoor />} />
+        <Route path={`${process.env.PUBLIC_URL}/my-meadow-a5/outdoor/edit`}element={<OutdoorEditPage />} />
+        <Route path={`${process.env.PUBLIC_URL}/my-meadow-a5/calendar`} element={<CalendarPage />} />
+        <Route path={`${process.env.PUBLIC_URL}/my-meadow-a5/indoor/edit`} element={<IndoorEdit />} />
       </Routes>
     </Router>
   );
